@@ -1,0 +1,359 @@
+%% Deep Learning Framework for Heston Model Calibration
+%% Author: Joris Marvezy | December 2025
+
+%% ========================================================
+%% FOUNDATIONAL OPTION PRICING THEORY
+%% ========================================================
+
+@article{Heston1993,
+author = {Heston, S. L.},
+title = {A closed-form solution for options with stochastic volatility with applications to bond and currency options},
+journal = {Review of Financial Studies},
+year = {1993},
+volume = {6},
+number = {2},
+pages = {327--343},
+doi = {10.1093/rfs/6.2.327},
+url = {https://doi.org/10.1093/rfs/6.2.327}
+}
+
+@article{BlackScholes1973,
+author = {Black, F. and Scholes, M.},
+title = {The pricing of options and corporate liabilities},
+journal = {Journal of Political Economy},
+year = {1973},
+volume = {81},
+number = {3},
+pages = {637--654},
+doi = {10.1086/260062},
+url = {https://www.jstor.org/stable/1831029}
+}
+
+@article{Merton1973,
+author = {Merton, R. C.},
+title = {Theory of rational option pricing},
+journal = {The Bell Journal of Economics and Management Science},
+year = {1973},
+volume = {4},
+number = {1},
+pages = {141--183},
+doi = {10.2307/3003143},
+url = {https://www.jstor.org/stable/3003143}
+}
+
+%% ========================================================
+%% EMPIRICAL VOLATILITY PATTERNS & SMILE
+%% ========================================================
+
+@article{Rubinstein1985,
+author = {Rubinstein, M.},
+title = {Nonparametric tests of alternative option pricing models using all reported trades and quotes on the 30 most active CBOE option classes from November 23, 1981 to March 31, 1985},
+journal = {Journal of Finance},
+year = {1985},
+volume = {40},
+number = {2},
+pages = {455--480},
+doi = {10.1111/j.1540-6261.1985.tb04967.x},
+url = {https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.1985.tb04967.x}
+}
+
+@article{Lamoureux1993,
+author = {Lamoureux, C. G. and Lastrapes, W. D.},
+title = {Forecasting stock-return variance: Toward an understanding of stochastic implied volatilities},
+journal = {Review of Financial Studies},
+year = {1993},
+volume = {6},
+number = {2},
+pages = {293--326},
+doi = {10.1093/rfs/6.2.293},
+url = {https://doi.org/10.1093/rfs/6.2.293}
+}
+
+@article{Black1976,
+author = {Black, F.},
+title = {Studies of stock price volatility changes},
+journal = {Proceedings of the American Statistical Association, Business and Economic Statistics Section},
+year = {1976},
+pages = {177--181}
+}
+
+@article{Jones2003,
+author = {Jones, C. S.},
+title = {The dynamics of stochastic volatility: Evidence from underlying and options markets},
+journal = {Journal of Econometrics},
+year = {2003},
+volume = {116},
+number = {1--2},
+pages = {181--224},
+doi = {10.1016/S0304-4076(03)00107-6},
+url = {https://www.sciencedirect.com/science/article/abs/pii/S0304407603001076?via%3Dihub}
+}
+
+%% ========================================================
+%% STOCHASTIC VOLATILITY MODELS
+%% ========================================================
+
+@article{Hull1987,
+author = {Hull, J. and White, A.},
+title = {The pricing of options on assets with stochastic volatilities},
+journal = {Journal of Finance},
+year = {1987},
+volume = {42},
+number = {2},
+pages = {281--300},
+doi = {10.1111/j.1540-6261.1987.tb02568.x},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1540-6261.1987.tb02568.x}
+}
+
+@article{SteinStein1991,
+author = {Stein, E. M. and Stein, J. C.},
+title = {Stock price distributions with stochastic volatility: An analytical approach},
+journal = {Review of Financial Studies},
+year = {1991},
+volume = {4},
+number = {4},
+pages = {727--752},
+doi = {10.1093/rfs/4.4.727},
+url = {https://doi.org/10.1093/rfs/4.4.727}
+}
+
+@article{BakshiCaoChen1997,
+author = {Bakshi, G. and Cao, C. and Chen, Z.},
+title = {Empirical performance of alternative option pricing models},
+journal = {Journal of Finance},
+year = {1997},
+volume = {52},
+number = {5},
+pages = {2003--2049},
+doi = {10.1111/j.1540-6261.1997.tb02749.x},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1540-6261.1997.tb02749.x}
+}
+
+@article{Merton1976,
+author = {Merton, R. C.},
+title = {Option pricing when underlying stock returns are discontinuous},
+journal = {Journal of Financial Economics},
+year = {1976},
+volume = {3},
+number = {1--2},
+pages = {125--144},
+doi = {10.1016/0304-405X(76)90022-2},
+url = {https://doi.org/10.1016/0304-405X(76)90022-2}
+}
+
+@article{GatheralJaissonRosenbaum2018,
+author = {Gatheral, J. and Jaisson, T. and Rosenbaum, M.},
+title = {Volatility is rough},
+journal = {Quantitative Finance},
+year = {2018},
+volume = {18},
+number = {6},
+pages = {933--949},
+doi = {10.1080/14697688.2017.1393551},
+url = {https://doi.org/10.1080/14697688.2017.1393551}
+}
+
+%% ========================================================
+%% NUMERICAL METHODS & FFT PRICING
+%% ========================================================
+
+@article{CarrMadan1999,
+author = {Carr, P. and Madan, D.},
+title = {Option valuation using the fast Fourier transform},
+journal = {Journal of Computational Finance},
+year = {1999},
+volume = {2},
+number = {4},
+pages = {61--73},
+doi = {10.21314/jcf.1999.043},
+url = {https://www.risk.net/journal-of-computational-finance/2160495/option-valuation-using-the-fast-fourier-transform}
+}
+
+@article{FangOosterlee2009,
+author = {Fang, F. and Oosterlee, C. W.},
+title = {A novel pricing method for European options based on Fourier-cosine series expansions},
+journal = {SIAM Journal on Scientific Computing},
+year = {2009},
+volume = {31},
+number = {2},
+pages = {826--848},
+doi = {10.1137/080718061},
+url = {https://doi.org/10.1137/080718061}
+}
+
+@article{Andersen2007,
+author = {Andersen, L. B. G.},
+title = {Efficient simulation of the Heston stochastic volatility model},
+journal = {Journal of Computational Finance},
+year = {2007},
+volume = {11},
+number = {3},
+pages = {1--42},
+url = {https://papers.ssrn.com/sol3/papers.cfm?abstract_id=946405}
+}
+
+%% ========================================================
+%% CALIBRATION THEORY & PRACTICE
+%% ========================================================
+
+@book{Cont2003,
+author = {Cont, R. and Tankov, P.},
+title = {Financial Modelling with Jump Processes},
+publisher = {Chapman and Hall/CRC Press},
+year = {2003},
+edition = {1st},
+doi = {doi.org/10.1201/9780203485217},
+}
+
+@article{GuillaumeSchoutens2013,
+author = {Guillaume, F. and Schoutens, W.},
+title = {Heston model: The variance swap calibration},
+journal = {SSRN Electronic Journal},
+year = {2013},
+url = {https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2255550}
+}
+
+@article{CuiDelBanoRollinGermano2017,
+author = {Cui, Y. and del Ba\~{n}o Rollin, S. and Germano, G.},
+title = {Full and fast calibration of the Heston stochastic volatility model},
+journal = {European Journal of Operational Research},
+year = {2017},
+volume = {263},
+number = {2},
+pages = {625--638},
+doi = {10.1016/j.ejor.2017.05.018},
+url = {https://doi.org/10.1016/j.ejor.2017.05.018}
+}
+
+@article{GauthierRivaille2009,
+author = {Gauthier, P. and Rivaille, P.-Y.},
+title = {Fitting the smile, smart parameters for {SABR} and {H}eston},
+journal = {SSRN Electronic Journal},
+year = {2009},
+url = {https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1496982}
+}
+
+%% ========================================================
+%% NEURAL NETWORKS IN DERIVATIVES PRICING
+%% ========================================================
+
+@article{HutchinsonLoPogg1994,
+author = {Hutchinson, J. M. and Lo, A. W. and Poggio, T.},
+title = {A nonparametric approach to pricing and hedging derivative securities using neural networks},
+journal = {Journal of Finance},
+year = {1994},
+volume = {49},
+number = {3},
+pages = {851--889},
+doi = {https://doi.org/10.1111/j.1540-6261.1994.tb00081.x},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1540-6261.1994.tb00081.x}
+}
+
+@article{LeCun1998,
+author = {LeCun, Y. and Bottou, L. and Bengio, Y. and Haffner, P.},
+title = {Gradient-based learning applied to document recognition},
+journal = {Proceedings of the IEEE},
+year = {1998},
+volume = {86},
+number = {11},
+pages = {2278--2324},
+doi = {10.1109/5.726791},
+url = {https://doi.org/10.1109/5.726791}
+}
+
+@article{Liu2019,
+author = {Liu, S. and Oosterlee, C. W. and Bohte, S. M.},
+title = {Pricing options and computing implied volatilities using neural networks},
+journal = {Risks},
+year = {2019},
+volume = {7},
+number = {1},
+pages = {16},
+doi = {10.3390/risks7010016},
+url = {https://doi.org/10.3390/risks7010016}
+}
+
+@article{BayerStemperTempone2019,
+author = {Bayer, C. and Stemper, B. and Tempone, R.},
+title = {Deep calibration of (rough) stochastic volatility models},
+journal = {arXiv preprint arXiv:1908.08806},
+year = {2019},
+url = {https://arxiv.org/abs/1908.08806}
+}
+
+@article{HorvathMuguruzaTomas2019,
+author = {Horvath, B. and Muguruza, A. and Tomas, M.},
+title = {Deep learning volatility: A hybrid approach},
+journal = {Quantitative Finance},
+year = {2019},
+volume = {21},
+number = {10},
+pages = {1665--1678},
+doi = {10.48550/arXiv.1901.09647},
+url = {https://arxiv.org/abs/1901.09647}
+}
+
+%% ========================================================
+%% DEEP LEARNING & OPTIMIZATION
+%% ========================================================
+
+@article{Kingma2014,
+author = {Kingma, D. P. and Ba, J.},
+title = {Adam: A method for stochastic optimization},
+journal = {arXiv preprint arXiv:1412.6980},
+year = {2014},
+doi = {doi.org/10.48550/arXiv.1412.6980},
+url = {https://arxiv.org/abs/1412.6980}
+}
+
+@book{Goodfellow-et-al-2016,
+author = {Ian Goodfellow and Yoshua Bengio and Aaron Courville},
+title = {Deep Learning},
+publisher = {MIT Press},
+year = {2016},
+url = {https://www.deeplearningbook.org/}
+}
+
+@inproceedings{Vaswani2023,
+author = {Vaswani, A. and Shazeer, N. and Parmar, N. and Uszkoreit, J. and Jones, L. and Gomez, A. N. and Kaiser, {\L}. and Polosukhin, I.},
+title = {Attention is all you need},
+booktitle = {Advances in Neural Information Processing Systems 30 (NIPS 2017)},
+year = {2023},
+pages = {5998--6008},
+doi = {doi.org/10.48550/arXiv.1706.03762},
+url = {https://arxiv.org/abs/1706.03762}
+}
+
+@ARTICLE{Jiang2021,
+  author={Vo, Khoa and Yamazaki, Kashu and Truong, Sang and Tran, Minh-Triet and Sugimoto, Akihiro and Le, Ngan},
+  journal={IEEE Access}, 
+  title={ABN: Agent-Aware Boundary Networks for Temporal Action Proposal Generation}, 
+  year={2021},
+  volume={9},
+  number={},
+  pages={126431-126445},
+  doi={10.1109/ACCESS.2021.3110973}}
+
+
+%% ========================================================
+%% MACHINE LEARNING & ENSEMBLE METHODS
+%% ========================================================
+
+@article{Krauss2017,
+author = {Krauss, C. and Do, X. A. and Huck, N.},
+title = {Deep neural networks, gradient-boosted trees, random forests: Statistical arbitrage on the S\&P 500},
+journal = {Journal of Machine Learning Research},
+year = {2017},
+volume = {18},
+number = {62},
+pages = {1--28},
+doi = {doi.org/10.1016/j.ejor.2016.10.031},
+url = {https://www.sciencedirect.com/science/article/abs/pii/S0377221716308657}
+}
+
+@book{Zhou2012,
+author = {Zhou, Z. H.},
+title = {Ensemble Methods: Foundations and Algorithms},
+publisher = {Chapman \& Hall/CRC},
+year = {2012},
+}

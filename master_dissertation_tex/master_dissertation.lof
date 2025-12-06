@@ -1,0 +1,8 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces Calibration Data Distributions Across Securities}}{19}{figure.caption.2}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Calibration Performance Comparison: Pricing RMSE, Calibration Time, and Speedup across Securities.}}{24}{figure.caption.4}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Error Distribution Analysis: Histograms and Q-Q Plots.}}{25}{figure.caption.5}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Calibrated Heston Parameters by Method: Traditional FFT vs. NN Surrogate.}}{26}{figure.caption.6}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Pricing Error Analysis: Errors by Moneyness and Maturity.}}{27}{figure.caption.7}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Market vs. Model Calibrated Prices: Goodness of Fit Comparison.}}{27}{figure.caption.8}%
+\contentsline {figure}{\numberline {7}{\ignorespaces QQQ Market Implied Volatility Surface.}}{28}{figure.caption.9}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Framework Flowchart: Six-stage pipeline for neural network Heston calibration.}}{37}{figure.caption.13}%
