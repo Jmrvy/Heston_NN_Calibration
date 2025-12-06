@@ -1,0 +1,16 @@
+\begin{table}
+\caption{Descriptive Statistics}
+\label{tab:descriptive_stats}
+\begin{tabular}{llrrrrrrrrrr}
+\toprule
+Ticker & Method & RMSE & MAE & MAPE & Max Error & Mean Error & Std Error & Median Error & Skewness & Kurtosis & Time (s) \\
+\midrule
+QQQ & Traditional & 0.4923 & 0.3756 & 7.1676 & 1.7720 & 0.0024 & 0.4923 & -0.1130 & 0.0356 & 0.9806 & 6.0069 \\
+QQQ & NN Surrogate & 0.5264 & 0.4223 & 7.5731 & 1.9433 & -0.1337 & 0.5091 & -0.2254 & -0.1083 & 0.8818 & 1.6726 \\
+SPY & Traditional & 0.5525 & 0.4335 & 10.6756 & 1.6953 & 0.0179 & 0.5522 & -0.1071 & 0.0358 & 0.1845 & 5.3355 \\
+SPY & NN Surrogate & 0.9282 & 0.7508 & 18.0961 & 2.4842 & -0.6528 & 0.6599 & -0.7322 & -0.1332 & -0.3613 & 2.2235 \\
+TSLA & Traditional & 0.7376 & 0.5361 & 1.9317 & 2.6971 & 0.0639 & 0.7348 & 0.1488 & 0.3906 & 2.2718 & 2.4906 \\
+TSLA & NN Surrogate & 1.9192 & 1.2883 & 3.4756 & 4.5681 & -1.1708 & 1.5207 & -0.4165 & -0.7717 & -0.9436 & 3.0640 \\
+\bottomrule
+\end{tabular}
+\end{table}

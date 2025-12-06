@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-11-28T19:29:55.191364",
+  "tickers": [
+    "QQQ",
+    "SPY",
+    "TSLA"
+  ],
+  "n_securities": 3,
+  "total_options": 288,
+  "hypothesis_tests": {
+    "significant_at_0_05": 6,
+    "significant_at_0_01": 6,
+    "total_tests": 6
+  },
+  "effect_sizes": {
+    "large_effects": 0,
+    "medium_effects": 2,
+    "small_effects": 1
+  },
+  "normality": {
+    "normal_distributions": 0,
+    "non_normal_distributions": 6
+  },
+  "aggregate_metrics": {
+    "mean_rmse_traditional": 0.5941146949731447,
+    "mean_rmse_nn": 1.124589000057473,
+    "mean_speedup": 2.267911955814219,
+    "mean_time_traditional": 4.610999981562297,
+    "mean_time_nn": 2.320058822631836
+  }
+}

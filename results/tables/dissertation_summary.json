@@ -1,0 +1,32 @@
+{
+  "title": "Heston Model Deep Learning Calibration Results",
+  "date": "2025-11-28T19:29:55.191364",
+  "tickers": [
+    "QQQ",
+    "SPY",
+    "TSLA"
+  ],
+  "method_comparison": {
+    "traditional": {
+      "avg_rmse": 0.5941146949731447,
+      "avg_mae": 0.44839701870687515,
+      "avg_time": 4.610999981562297
+    },
+    "nn_surrogate": {
+      "avg_rmse": 1.124589000057473,
+      "avg_mae": 0.8204621989514743,
+      "avg_time": 2.320058822631836
+    },
+    "avg_speedup": 2.267911955814219
+  },
+  "figures_saved": [
+    "performance_comparison.png",
+    "parameter_comparison.png",
+    "market_vs_model_prices.png",
+    "error_analysis.png"
+  ],
+  "tables_saved": [
+    "performance_comparison.csv",
+    "underlying_statistics.csv"
+  ]
+}

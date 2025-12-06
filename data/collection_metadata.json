@@ -1,0 +1,114 @@
+{
+  "collection_timestamp": "2025-11-28T19:14:12.089247",
+  "tickers": [
+    "QQQ",
+    "SPY",
+    "TSLA"
+  ],
+  "history_years": 2,
+  "filters": {
+    "min_volume": 50,
+    "min_open_interest": 100,
+    "moneyness_range": [
+      0.9,
+      1.1
+    ],
+    "maturity_range": [
+      0.05,
+      1.5
+    ],
+    "option_type": "call"
+  },
+  "summaries": {
+    "QQQ": {
+      "ticker": "QQQ",
+      "timestamp": "2025-11-28T19:13:51.468846",
+      "history": {
+        "file": "/Users/jorismrvy/Desktop/TBS MSc/Master Dissertation/Heston Model/data/raw/underlying/QQQ_history.csv",
+        "n_observations": 501,
+        "date_range": [
+          "2023-11-30",
+          "2025-11-28"
+        ],
+        "price_range": [
+          380.37420654296875,
+          635.77001953125
+        ]
+      },
+      "spot": 619.25,
+      "options_raw": 417,
+      "calibration": {
+        "file": "/Users/jorismrvy/Desktop/TBS MSc/Master Dissertation/Heston Model/data/processed/calibration/QQQ_calibration.csv",
+        "n_options": 107,
+        "moneyness_range": [
+          0.9204683084376262,
+          1.0981025433992733
+        ],
+        "maturity_range": [
+          0.057494866529774126,
+          1.1307323750855578
+        ]
+      }
+    },
+    "SPY": {
+      "ticker": "SPY",
+      "timestamp": "2025-11-28T19:13:59.005653",
+      "history": {
+        "file": "/Users/jorismrvy/Desktop/TBS MSc/Master Dissertation/Heston Model/data/raw/underlying/SPY_history.csv",
+        "n_observations": 501,
+        "date_range": [
+          "2023-11-30",
+          "2025-11-28"
+        ],
+        "price_range": [
+          443.3031311035156,
+          687.3900146484375
+        ]
+      },
+      "spot": 683.469970703125,
+      "options_raw": 644,
+      "calibration": {
+        "file": "/Users/jorismrvy/Desktop/TBS MSc/Master Dissertation/Heston Model/data/processed/calibration/SPY_calibration.csv",
+        "n_options": 134,
+        "moneyness_range": [
+          0.9144512952881111,
+          1.0973415543457332
+        ],
+        "maturity_range": [
+          0.057494866529774126,
+          1.3032169746748803
+        ]
+      }
+    },
+    "TSLA": {
+      "ticker": "TSLA",
+      "timestamp": "2025-11-28T19:14:05.914061",
+      "history": {
+        "file": "/Users/jorismrvy/Desktop/TBS MSc/Master Dissertation/Heston Model/data/raw/underlying/TSLA_history.csv",
+        "n_observations": 501,
+        "date_range": [
+          "2023-11-30",
+          "2025-11-28"
+        ],
+        "price_range": [
+          142.0500030517578,
+          479.8599853515625
+        ]
+      },
+      "spot": 430.1700134277344,
+      "options_raw": 361,
+      "calibration": {
+        "file": "/Users/jorismrvy/Desktop/TBS MSc/Master Dissertation/Heston Model/data/processed/calibration/TSLA_calibration.csv",
+        "n_options": 47,
+        "moneyness_range": [
+          0.9298649080921985,
+          1.092591267008333
+        ],
+        "maturity_range": [
+          0.057494866529774126,
+          1.1307323750855578
+        ]
+      }
+    }
+  }
+}
